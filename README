@@ -1,0 +1,19 @@
+Zarek Lazowski
+
+USER INFO:
+This set of files is a light-weight process library. The library by default 
+uses a round robin scheduler, however the user is able to replace the scheduler
+with one of their own choosing. 
+
+This was created in a virtual Ubuntu x86 environment, and is not intended
+to run outside of a unix-based system.
+
+INSTRUCTIONS:
+Provided makefile creates .a and .so libraries used in desired multithreaded 
+programs. Make sure to include the library when building a multithreaded 
+program and include lwp.h.
+
+To replace the defulat scheduler, one needs to create a scheduler structure
+(defined in lwp.h, line 56) and call the lwp_set_scheduler function.
+
+An example program is can be built by making 'nums'
